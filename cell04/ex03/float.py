@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 def czech(number):
     if number.is_integer():
         print("This number is an integer")
