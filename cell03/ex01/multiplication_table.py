@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 a=int(input("Enter a Number : "))
 print(a,"x 0 =",a*0,"\n")
 print(a,"x 1 =",a*1,"\n")
