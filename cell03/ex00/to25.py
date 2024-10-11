@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 n=int(input())
 count=25
 while(count>n):
