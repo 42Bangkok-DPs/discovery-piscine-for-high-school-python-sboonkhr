@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 # This is the base class for all chess pieces.
 class Piece:
     def __init__(self, name, color):
@@ -153,22 +154,3 @@ class ChessBoard:
         except (ValueError, IndexError):
             print("Invalid input!")  # Error message if move format is wrong.
             return None, None
-
-# Main function to play the game.
-def main():
-    board = ChessBoard()  # Create a new game.
-    while True:
-        board.print_board()  # Show the board.
-        move = input(f"{board.turn}'s move (e.g., e2 e4): ").lower()  # Get a move from the player.
-        if move == "stop":  # End the game if "stop" is typed.
-            break
-        elif move == "reset":  # Reset the game if "reset" is typed.
-            board = ChessBoard()
-        else:
-            start, end = board.parse_move(move)  # Convert the move into coordinates.
-            if start and end:
-                board.move(start, end)  # Make the move if it's valid.
-
-if __name__ == "__main__":
-    main()  # Start the game.
-message.txt
